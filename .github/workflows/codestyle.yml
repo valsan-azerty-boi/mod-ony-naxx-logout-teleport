@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint:
-    name: "clang-format-always-success"
+    name: "codestyle"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Module
