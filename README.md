@@ -1,4 +1,6 @@
 # mod-ony-naxx-logout-teleport
+[![core-build](https://github.com/valsan-azerty-boi/mod-ony-naxx-logout-teleport/actions/workflows/core-build.yml/badge.svg)](https://github.com/valsan-azerty-boi/mod-ony-naxx-logout-teleport/actions/workflows/core-build.yml)
+[![Codestyle Checks](https://github.com/valsan-azerty-boi/mod-ony-naxx-logout-teleport/actions/workflows/core_codestyle.yml/badge.svg)](https://github.com/valsan-azerty-boi/mod-ony-naxx-logout-teleport/actions/workflows/core_codestyle.yml)
 
 This module is designed to work with [AzerothCore](https://www.azerothcore.org/) (3.3.5).
 
