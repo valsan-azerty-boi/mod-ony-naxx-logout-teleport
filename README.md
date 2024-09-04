@@ -1,5 +1,5 @@
 # mod-ony-naxx-logout-teleport
-
+[![Build Status](https://github.com/valsan-azerty-boi/mod-ony-naxx-logout-teleport/workflows/core-build/badge.svg?branch=master&event=push)](https://github.com/valsan-azerty-boi/mod-ony-naxx-logout-teleport)
 This module is designed to work with [AzerothCore](https://www.azerothcore.org/) (3.3.5).
 
 ## Why use this module
