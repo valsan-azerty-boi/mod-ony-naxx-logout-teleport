@@ -8,7 +8,7 @@ class OnyNaxxLogoutTeleport : public PlayerScript
 public:
 	OnyNaxxLogoutTeleport() : PlayerScript("OnyNaxxLogoutTeleport") {}
 
-	void OnLogin(Player *player) override
+	void OnPlayerLogin(Player *player) override
 	{
 		if (player->GetMapId() == 533)
 		{
