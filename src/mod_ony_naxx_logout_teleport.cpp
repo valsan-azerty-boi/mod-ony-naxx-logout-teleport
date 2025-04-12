@@ -10,13 +10,36 @@ public:
 
 	void OnPlayerLogin(Player *player) override
 	{
-		if (player->GetMapId() == 533)
+		TeleportIfNeeded(player);
+	}
+
+	void OnPlayerLogout(Player *player) override
+	{
+		TeleportIfNeeded(player);
+	}
+
+	void OnPlayerBeforeLogout(Player *player) override
+	{
+		TeleportIfNeeded(player);
+	}
+
+private:
+	void TeleportIfNeeded(Player *player)
+	{
+		int mapId = player->GetMapId();
+		if (player->GetRaidDifficulty() != 2)
+			return;
+
+		switch (mapId)
 		{
-			player->TeleportTo(0, 3082.641602f, -3725.781250f, 132.418884f, 0.002488f);
-		}
-		else if (player->GetMapId() == 249)
-		{
-			player->TeleportTo(1, -4737.995f, -3745.33f, 53.68f, 0.002488f);
+			case 533:
+				player->TeleportTo(0, 3082.641602f, -3725.781250f, 132.418884f, 0.002488f);
+				break;
+			case 249:
+				player->TeleportTo(1, -4737.995f, -3745.33f, 53.68f, 0.002488f);
+				break;
+			default:
+				break;
 		}
 	}
 };
