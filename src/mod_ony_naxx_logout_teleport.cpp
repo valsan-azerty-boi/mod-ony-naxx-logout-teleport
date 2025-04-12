@@ -27,7 +27,7 @@ private:
 	void TeleportIfNeeded(Player *player)
 	{
 		int mapId = player->GetMapId();
-		if (player->GetRaidDifficulty() != 2)
+		if (player->GetRaidDifficulty() != RAID_DIFFICULTY_10MAN_HEROIC)
 			return;
 
 		switch (mapId)
